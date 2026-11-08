@@ -62,9 +62,9 @@ jobs:
       - name: Pull image on Windows
         if: runner.os == 'Windows'
         shell: powershell -NoProfile -ExecutionPolicy Bypass -File {0}
-        run: docker pull --platform linux/amd64 ghcr.io/ali-moukallid/portfolio_jenkins:latest
+        run: docker pull --platform linux/amd64 ghcr.io/lanafarrage/ci-cd.git
 
       - name: Pull image on macOS
         if: runner.os == 'macOS'
         shell: bash
-        run: docker pull --platform linux/amd64 ghcr.io/ali-moukallid/portfolio_jenkins:latest
+        run: docker pull --platform linux/amd64 ghcr.io/lanafarrage/ci-cd.git
