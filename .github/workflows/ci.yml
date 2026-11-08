@@ -32,7 +32,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t ghcr.io/lanafarrage/CI-CD.git .
+        run: docker build -t ghcr.io/lanafarrage/ci-cd.git .
 
       - name: Push Docker image
-        run: docker push ghcr.io/lanafarrage/CI-CD.git
+        run: docker push ghcr.io/lanafarrage/ci-cd.git
